@@ -5,8 +5,6 @@ import json
 from PIL import Image
 from transformers import AutoProcessor, PaliGemmaForConditionalGeneration
 
-# Set configurations
-torch.set_num_threads(4)
 start_time = time.time()
 device = "cuda"  # Assuming the device name is 'cuda' for GPU
 torch_dtype = torch.float32
